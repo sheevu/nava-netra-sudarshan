@@ -1,0 +1,136 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #0f112b;
+  color: #fff;
+}
+.hero {
+  padding: 50px 20px;
+  text-align: center;
+  background: linear-gradient(135deg, #0e182a 70%, #12ff75 100%);
+  box-shadow: 0 0 50px #12ff7566, 0 2px 16px #000a;
+}
+.hero h1 { font-size: 2.5rem; color: #12ff75; }
+.hero h2 { color: #00ecff; }
+a.cta {
+  background: #ff33ff;
+  color: #fff;
+  text-decoration: none;
+  padding: 15px 30px;
+  border-radius: 50px;
+  font-weight: bold;
+  margin-top: 15px;
+  display: inline-block;
+  box-shadow: 0 0 10px #ff33ff99;
+}
+
+.showcase, .pricing, .testimonials, .leadform, .knowledge-hub {
+  margin: 40px 0;
+  padding: 30px 10px;
+  background: #1a203a;
+  border-radius: 12px;
+  max-width: 800px;
+  margin-left: auto; margin-right: auto;
+  box-shadow: 0 2px 20px #12ff7566;
+}
+.cards { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;}
+.card {
+  background: linear-gradient(135deg, #00ecff 30%, #ff33ff 60%, #ff8400 100%);
+  padding: 18px;
+  border-radius: 10px;
+  width: 185px;
+  text-align: center;
+  color: #fff;
+  margin: 10px 0;
+  box-shadow: 0 2px 24px #000a, 0 0 20px #00ecff55;
+}
+.pricing ul {list-style:none; padding:0;}
+.pricing li {margin:8px 0;background:#0002;border-radius:4px;padding:8px;}
+
+blockquote { font-style: italic; background: #ff840066; padding: 20px; border-radius: 10px; }
+
+.leadform input, .leadform textarea { display: block; width: 90%; margin: 10px auto; padding: 10px; border-radius: 8px; border: none; }
+.leadform button { background:#12ff75; color:#000; border:none; font-weight:bold; padding:10px 36px; border-radius:20px; }
+
+footer { text-align:center; padding:30px 10px; background: #000015; color: #fff; }
+footer .marquee {
+  width:100%; overflow:hidden; white-space:nowrap; animation: marquee 15s linear infinite; margin:12px 0;
+}
+@keyframes marquee {
+  0% {text-indent:100%;}
+  100%{text-indent:-100%;}
+}
+.benefits {
+  background: linear-gradient(101deg, #ff8400 30%, #12ff75 100%);
+  color: #222;
+  border-radius: 14px;
+  margin: 34px auto;
+  padding: 38px 16px;
+  max-width: 800px;
+  text-align: center;
+  box-shadow: 0 2px 32px #ff840099, 0 1px 6px #1111;
+}
+.benefit-cards {
+  display: flex;
+  gap: 21px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 30px 0 20px 0;
+}
+.benefit-card {
+  background: #fff1e0;
+  border-radius: 9px;
+  box-shadow: 0 2px 10px #ff840055;
+  color: #222;
+  font-weight: 600;
+  font-size: 1.09rem;
+  padding: 16px 23px;
+}
+.marquee {
+  margin: 21px 0 0 0;
+  font-size: 1.07rem;
+  color: #fff;
+  background: #ff33ff;
+  padding: 8px 18px;
+  border-radius: 6px;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: marquee 14s linear infinite;
+}
+@keyframes marquee {
+  0%   { text-indent: 100%;}
+  100% { text-indent: -100%; }
+}
+/* --- Directory styles --- */
+.directory {
+  background: #141c37;
+  color: #fff;
+  padding: 45px 20px 35px 20px;
+  border-radius: 13px;
+  margin: 48px auto 32px auto;
+  max-width: 900px;
+  box-shadow: 0 3px 32px #12ff7577;
+  text-align: center;
+}
+.directory-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  justify-content: center;
+  margin: 30px 0 20px 0;
+}
+.directory-card {
+  background: linear-gradient(120deg, #ff8400 0%, #00ecff 80%);
+  color: #111;
+  padding: 25px 18px;
+  border-radius: 11px;
+  min-width: 195px;
+  flex: 0 1 230px;
+  box-shadow: 0 2px 18px #ff840066;
+  margin-bottom: 8px;
+  transition: transform .25s, box-shadow .25s;
+}
+.directory-card:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 6px 44px #ff33ff66;
+}
