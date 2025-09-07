@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sudarshan&nbsp;AI&nbsp;Labs</title>
+  <style>
+    :root {
+      /* Colour palette inspired by the reference video */
+      --bg-dark: #080907;
+      --light: #c2c3c1;
+      --brown: #312a15;
+      --accent1: #e58118;
+      --accent2: #42e61e;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      background: var(--bg-dark);
+      color: var(--light);
+      font-family: inherit;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    /* Hero section */
+    .hero {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 90vh;
+      text-align: center;
+      background: linear-gradient(135deg, var(--bg-dark), var(--brown));
+      padding: 2rem;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      margin: 0;
+      color: var(--accent2);
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin-top: 1rem;
+      max-width: 700px;
+    }
+
+    .hero .cta-btn {
+      margin-top: 2rem;
+      padding: 1rem 2rem;
+      background: var(--accent1);
+      color: var(--bg-dark);
+      border: none;
+      border-radius: 0.5rem;
+      font-weight: 700;
+      text-decoration: none;
+      transition: background 0.3s ease;
+    }
+
+    .hero .cta-btn:hover {
+      background: var(--accent2);
+      color: var(--bg-dark);
+    }
+
+    /* Marquee */
+    .marquee {
+      background: var(--brown);
+      color: var(--accent1);
+      overflow: hidden;
+      white-space: nowrap;
+      padding: 0.5rem 0;
+      font-weight: 600;
+    }
+
+    .marquee span {
+      display: inline-block;
+      padding-left: 100%;
+      animation: marquee 15s linear infinite;
+    }
+
+    @keyframes marquee {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+
+    /* Generic section wrapper */
+    .section {
+      padding: 4rem 1.5rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .section h2 {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+      text-align: center;
+      color: var(--accent2);
+    }
+
+    /* Service cards */
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .card {
+      background: var(--brown);
+      border-radius: 0.75rem;
+      padding: 1.5rem;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h3 {
+      margin-top: 0;
+      color: var(--accent1);
+    }
+
+    .card p {
+      margin-bottom: 0;
+    }
+
+    /* Pricing tables */
+    .pricing {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    .price-card {
+      background: var(--brown);
+      border-radius: 0.75rem;
+      padding: 1.5rem;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    }
+
+    .price-card h3 {
+      margin-top: 0;
+      color: var(--accent1);
+    }
+
+    .price {
+      font-size: 2rem;
+      color: var(--accent2);
+      margin: 1rem 0;
+    }
+
+    .price-card ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .price-card ul li {
+      margin: 0.5rem 0;
+    }
+
+    .price-card a {
+      display: block;
+      margin-top: 1.5rem;
+      padding: 0.75rem;
+      background: var(--accent1);
+      color: var(--bg-dark);
+      text-align: center;
+      border-radius: 0.5rem;
+      text-decoration: none;
+      font-weight: 700;
+      transition: background 0.3s ease;
+    }
+
+    .price-card a:hover {
+      background: var(--accent2);
+    }
+
+    /* Footer */
+    .footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      background: var(--brown);
+      color: var(--light);
+    }
+  </style>
+</head>
+<body>
+  <!-- Hero Section -->
+  <div class="hero">
+    <h1>Empowering Vision with Sudarshan AI Labs</h1>
+    <p>Innovative AI solutions for Lucknow and beyond. Scale your business to new heights with our no‑code friendly tools.</p>
+    <!-- Update phone number to your own WhatsApp number -->
+    <a
+      href="https://wa.me/919999999999?text=I'm%20interested%20in%20Sudarshan%20AI%20Labs"
+      class="cta-btn"
+      >WhatsApp Us</a
+    >
+  </div>
+
+  <!-- Marquee for highlights -->
+  <div class="marquee">
+    <span>
+      AI Consulting&nbsp;&nbsp;&nbsp;Custom Solutions&nbsp;&nbsp;&nbsp;Data Analytics&nbsp;&nbsp;&nbsp;Automation&nbsp;&nbsp;&nbsp;Machine Learning&nbsp;&nbsp;&nbsp;Vision Solutions&nbsp;&nbsp;&nbsp;
+    </span>
+  </div>
+
+  <!-- Services Section -->
+  <div class="section">
+    <h2>Our Services</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>AI Consulting</h3>
+        <p>
+          Expert guidance to integrate AI into your business workflows using
+          no‑code/low‑code platforms.
+        </p>
+      </div>
+      <div class="card">
+        <h3>Custom Solutions</h3>
+        <p>
+          Tailor‑made AI applications built for your specific needs, from
+          computer vision to natural language processing.
+        </p>
+      </div>
+      <div class="card">
+        <h3>Automation</h3>
+        <p>
+          Streamline repetitive tasks with intelligent automation and workflow
+          optimisation to boost productivity.
+        </p>
+      </div>
+      <div class="card">
+        <h3>Training &amp; Support</h3>
+        <p>
+          Hands‑on training and ongoing support to empower your team to use AI
+          effectively and confidently.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Pricing Section -->
+  <div class="section">
+    <h2>Pricing</h2>
+    <div class="pricing">
+      <div class="price-card">
+        <h3>Starter</h3>
+        <div class="price">₹9,999</div>
+        <ul>
+          <li>Basic AI consultation</li>
+          <li>1 custom workflow</li>
+          <li>Email support</li>
+        </ul>
+        <a
+          href="https://wa.me/919999999999?text=I'm%20interested%20in%20the%20Starter%20plan"
+          >Get Started</a
+        >
+      </div>
+      <div class="price-card">
+        <h3>Growth</h3>
+        <div class="price">₹29,999</div>
+        <ul>
+          <li>Full AI audit</li>
+          <li>3 custom workflows</li>
+          <li>Priority email support</li>
+        </ul>
+        <a
+          href="https://wa.me/919999999999?text=I'm%20interested%20in%20the%20Growth%20plan"
+          >Get Started</a
+        >
+      </div>
+      <div class="price-card">
+        <h3>Enterprise</h3>
+        <div class="price">₹99,999</div>
+        <ul>
+          <li>Complete AI transformation</li>
+          <li>Unlimited workflows</li>
+          <li>24/7 support</li>
+        </ul>
+        <a
+          href="https://wa.me/919999999999?text=I'm%20interested%20in%20the%20Enterprise%20plan"
+          >Get Started</a
+        >
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <p>
+      © 2025 Sudarshan AI Labs Pvt. Ltd. All rights reserved. Registered in
+      Lucknow, U.P., India.
+    </p>
+  </div>
+</body>
+</html>
