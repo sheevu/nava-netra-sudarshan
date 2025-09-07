@@ -1,0 +1,62 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #0f112b;
+  color: #fff;
+}
+.hero {
+  padding: 50px 20px;
+  text-align: center;
+  background: linear-gradient(135deg, #0e182a 70%, #12ff75 100%);
+  box-shadow: 0 0 50px #12ff7566, 0 2px 16px #000a;
+}
+.hero h1 { font-size: 2.5rem; color: #12ff75; }
+.hero h2 { color: #00ecff; }
+a.cta {
+  background: #ff33ff;
+  color: #fff;
+  text-decoration: none;
+  padding: 15px 30px;
+  border-radius: 50px;
+  font-weight: bold;
+  margin-top: 15px;
+  display: inline-block;
+  box-shadow: 0 0 10px #ff33ff99;
+}
+
+.showcase, .pricing, .testimonials, .leadform, .knowledge-hub {
+  margin: 40px 0;
+  padding: 30px 10px;
+  background: #1a203a;
+  border-radius: 12px;
+  max-width: 800px;
+  margin-left: auto; margin-right: auto;
+  box-shadow: 0 2px 20px #12ff7566;
+}
+.cards { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;}
+.card {
+  background: linear-gradient(135deg, #00ecff 30%, #ff33ff 60%, #ff8400 100%);
+  padding: 18px;
+  border-radius: 10px;
+  width: 185px;
+  text-align: center;
+  color: #fff;
+  margin: 10px 0;
+  box-shadow: 0 2px 24px #000a, 0 0 20px #00ecff55;
+}
+.pricing ul {list-style:none; padding:0;}
+.pricing li {margin:8px 0;background:#0002;border-radius:4px;padding:8px;}
+
+blockquote { font-style: italic; background: #ff840066; padding: 20px; border-radius: 10px; }
+
+.leadform input, .leadform textarea { display: block; width: 90%; margin: 10px auto; padding: 10px; border-radius: 8px; border: none; }
+.leadform button { background:#12ff75; color:#000; border:none; font-weight:bold; padding:10px 36px; border-radius:20px; }
+
+footer { text-align:center; padding:30px 10px; background: #000015; color: #fff; }
+footer .marquee {
+  width:100%; overflow:hidden; white-space:nowrap; animation: marquee 15s linear infinite; margin:12px 0;
+}
+@keyframes marquee {
+  0% {text-indent:100%;}
+  100%{text-indent:-100%;}
+}
